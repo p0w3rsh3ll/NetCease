@@ -4,7 +4,7 @@
 RootModule = 'NetCease.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.0'
+ModuleVersion = '1.0.1'
 
 # ID used to uniquely identify this module
 GUID = 'e25b8d54-11ac-4a6e-8954-731524190329'

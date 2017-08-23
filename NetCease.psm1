@@ -108,7 +108,7 @@ Process {
                 35,2,0,0,0,0,24,0,19,0,15,0,
                 1,2,0,0,0,0,0,5,32,0,0,0,
                 37,2,0,0  -as [byte[]]
-            ) -WhatIf
+            )
             Write-Verbose -Message 'Successfully set SrvsvcSessionInfo'
         } catch {
             Write-Warning -Message "Failed to set SrvsvcSessionInfo in the registry because $($_.Exception.Message)"
