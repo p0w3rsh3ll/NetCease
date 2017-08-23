@@ -179,6 +179,7 @@ Restart-Service -Name LanmanServer -Fore -Verbose
 
 ## Issues
  * Version 1.0.0 had a -Whatif parameter after the Set-ItemProperty that was preventing to really set the hardened permissions
+ * Version 1.0.1 had the wrong catalog file published to the PowerShell gallery
 
 <a name="Todo"/>
 
