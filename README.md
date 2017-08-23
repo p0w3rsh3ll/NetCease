@@ -51,8 +51,8 @@ Find-Module -Name NetCease -Repository PSGallery
 ```
 ``` 
 Version    Name                                Repository           Description
--------    ----                                ----------           -----------                                   
-1.0.0      NetCease                            PSGallery            NetCease is a module ...
+-------    ----                                ----------           -----------
+1.0.2      NetCease                            PSGallery            NetCease is a module that will help disable Net ...
 ```
 
 ```powershell
@@ -65,8 +65,8 @@ Stop and please review the content of the module, I mean the code to make sure i
 You can also verify that the SHA256 hashes of downloaded files match those stored in the catalog file
 ```powershell
 $HT = @{
-    CatalogFilePath = "~/Downloads/NetCease/1.0.0/NetCease.cat"
-    Path = "~/Downloads/NetCease/1.0.0"
+    CatalogFilePath = "~/Downloads/NetCease/1.0.2/NetCease.cat"
+    Path = "~/Downloads/NetCease/1.0.2"
     Detailed = $true
     FilesToSkip = 'PSGetModuleInfo.xml'
 }
@@ -75,7 +75,7 @@ Test-FileCatalog @HT
 
 ```powershell
 # Import the module
-Import-Module ~/Downloads/NetCease/1.0.0/NetCease.psd1 -Force -Verbose
+Import-Module ~/Downloads/NetCease/1.0.2/NetCease.psd1 -Force -Verbose
 ```
 
 <a name="Functions"/>
@@ -87,9 +87,9 @@ Get-Command -Module NetCease
 ```
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
-Function        Get-NetSessionEnumPermission                       1.0.0      NetCease
-Function        Restore-NetSessionEnumPermission                   1.0.0      NetCease
-Function        Set-NetSessionEnumPermission                       1.0.0      NetCease
+Function        Get-NetSessionEnumPermission                       1.0.2      NetCease
+Function        Restore-NetSessionEnumPermission                   1.0.2      NetCease
+Function        Set-NetSessionEnumPermission                       1.0.2      NetCease
 ```
 <a name="Help"/>
 
@@ -178,7 +178,7 @@ Restart-Service -Name LanmanServer -Fore -Verbose
 <a name="Issues"/>
 
 ## Issues
- * None
+ * Version 1.0.0 had a -Whatif parameter after the Set-ItemProperty that was preventing to really set the hardened permissions
 
 <a name="Todo"/>
 
