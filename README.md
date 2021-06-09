@@ -172,7 +172,7 @@ DESCRIPTION
 Once you've used either the Set-NetSessionEnumPermission or Restore-NetSessionEnumPermission functions, 
 you need to restart the 'Server' service for changes to take effect:
 ```powershell
-Restart-Service -Name LanmanServer -Fore -Verbose
+Restart-Service -Name LanmanServer -Force -Verbose
 ```
 
 <a name="Issues"/>
